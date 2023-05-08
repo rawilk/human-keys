@@ -6,8 +6,6 @@
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/rawilk/human-keys?style=flat-square)](https://packagist.org/packages/rawilk/human-keys)
 [![License](https://img.shields.io/github/license/rawilk/human-keys?style=flat-square)](https://github.com/rawilk/human-keys/blob/main/LICENSE.md)
 
-
-
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Installation
@@ -26,6 +24,7 @@ php artisan migrate
 ```
 
 You can publish the config file with:
+
 ```bash
 php artisan vendor:publish --tag="human-keys-config"
 ```
@@ -34,7 +33,7 @@ You can view the default configuration here: https://github.com/rawilk/human-key
 
 ## Usage
 
-``` php
+```php
 $human-keys = new Rawilk\HumanKeys;
 echo $human-keys->echoPhrase('Hello, Rawilk!');
 ```
@@ -42,6 +41,7 @@ echo $human-keys->echoPhrase('Hello, Rawilk!');
 ## Scripts
 
 ### Setup
+
 For convenience, you can run the setup bin script for easy installation for local development.
 
 ```bash
@@ -49,6 +49,7 @@ For convenience, you can run the setup bin script for easy installation for loca
 ```
 
 ### Formatting
+
 Although formatting is done automatically via workflow, you can format php code locally before committing with a composer script:
 
 ```bash
@@ -57,7 +58,7 @@ composer format
 
 ## Testing
 
-``` bash
+```bash
 composer test
 ```
 
@@ -75,8 +76,8 @@ Please review [my security policy](.github/SECURITY.md) on how to report securit
 
 ## Credits
 
-- [Randall Wilk](https://github.com/rawilk)
-- [All Contributors](../../contributors)
+-   [Randall Wilk](https://github.com/rawilk)
+-   [All Contributors](../../contributors)
 
 ## License
 
