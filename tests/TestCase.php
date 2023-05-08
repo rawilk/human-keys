@@ -2,20 +2,13 @@
 
 namespace Rawilk\HumanKeys\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Rawilk\HumanKeys\HumanKeysServiceProvider;
 
 class TestCase extends Orchestra
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Rawilk\\HumanKeys\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
-        );
-    }
+    use LazilyRefreshDatabase;
 
     protected function getPackageProviders($app): array
     {
@@ -26,7 +19,7 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        // include_once __DIR__ . '/../database/migrations/create_human-keys_table.php.stub';
-        // (new \CreatePackageTable())->up();
+        $migration = include __DIR__ . '/Fixture/migrations/create_test_tables.php';
+        (new $migration)->up();
     }
 }
