@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Rawilk\HumanKeys\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class HumanKeysCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'human-keys';
 
     public $description = 'My command';
 
