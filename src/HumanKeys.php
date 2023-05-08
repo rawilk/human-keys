@@ -2,6 +2,17 @@
 
 namespace Rawilk\HumanKeys;
 
-class HumanKeys
+use Rawilk\HumanKeys\Contracts\HumanKeys as HumanKeysContract;
+use Rawilk\HumanKeys\Support\GeneratorFactory;
+
+class HumanKeys implements HumanKeysContract
 {
+    public function __construct(protected string $generator)
+    {
+    }
+
+    public function generate(?string $prefix = null): string
+    {
+        return GeneratorFactory::make($this->generator)->generator()->generate($prefix);
+    }
 }
