@@ -11,8 +11,8 @@ Ksuids are human-readable and sortable.
 
 Example:
 
-- `pos_2JvL8Gv5mirjbIVAlSRFrC8EaWR` for `Models/Post.php`
-- `usr_p6UEyCc8D8ecLijAI5zVwOTP3D0` for `Models/User.php`
+-   `pos_2JvL8Gv5mirjbIVAlSRFrC8EaWR` for `Models/Post.php`
+-   `usr_p6UEyCc8D8ecLijAI5zVwOTP3D0` for `Models/User.php`
 
 ## Installation
 
@@ -115,7 +115,7 @@ use Rawilk\HumanKeys\Concerns\HasHumanKey;
 class Post extends Model
 {
     use HasHumanKey;
-    
+
     public static function humanKeyPrefix() : string
     {
         // You should omit an underscore at the end of the prefix, as it will be added automatically
@@ -139,7 +139,7 @@ use Rawilk\HumanKeys\Concerns\HasHumanKey;
 class Post extends Model
 {
     use HasHumanKey;
-    
+
     public function humanKeys(): array
     {
         return ['human_key'];
@@ -198,8 +198,8 @@ more flexibility in which columns IDs are generated for.
 
 -   [Randall Wilk](https://github.com/rawilk)
 -   [All Contributors](../../contributors)
-- [godruoyi/php-snowflake](https://github.com/godruoyi/php-snowflake)
-- [tuupola/ksuid](https://github.com/tuupola/ksuid)
+-   [godruoyi/php-snowflake](https://github.com/godruoyi/php-snowflake)
+-   [tuupola/ksuid](https://github.com/tuupola/ksuid)
 
 ## License
 
