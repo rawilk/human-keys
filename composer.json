@@ -4,7 +4,14 @@
     "keywords": [
         "rawilk",
         "laravel",
-        "human-keys"
+        "human-keys",
+        "laravel-human-keys",
+        "stripe",
+        "uuid",
+        "ulid",
+        "ksuid",
+        "snowflake",
+        "keys"
     ],
     "homepage": "https://github.com/rawilk/human-keys",
     "license": "MIT",
