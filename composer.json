@@ -28,7 +28,7 @@
         "pestphp/pest-plugin-arch": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
         "spatie/laravel-ray": "^1.31",
-        "tuupola/ksuid": "*"
+        "tuupola/ksuid": "^2.1"
     },
     "autoload": {
         "psr-4": {
