@@ -2,9 +2,9 @@
 
 namespace Rawilk\HumanKeys;
 
+use Rawilk\HumanKeys\Commands\HumanKeysCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rawilk\HumanKeys\Commands\HumanKeysCommand;
 
 class HumanKeysServiceProvider extends PackageServiceProvider
 {
