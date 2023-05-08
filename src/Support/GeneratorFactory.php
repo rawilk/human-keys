@@ -7,6 +7,7 @@ namespace Rawilk\HumanKeys\Support;
 use Rawilk\HumanKeys\Contracts\Generator;
 use Rawilk\HumanKeys\Exceptions\InvalidGenerator;
 use Rawilk\HumanKeys\Generators\KsuidGenerator;
+use Rawilk\HumanKeys\Generators\SnowflakeGenerator;
 
 class GeneratorFactory
 {
@@ -27,6 +28,7 @@ class GeneratorFactory
 
         return match ($this->generator) {
             'ksuid' => new KsuidGenerator,
+            'snowflake' => new SnowflakeGenerator,
             default => throw InvalidGenerator::invalid($this->generator),
         };
     }

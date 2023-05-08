@@ -10,6 +10,7 @@ return [
     |
     | Supported:
     |    - ksuid (abc_p6UEyCc8D8ecLijAI5zVwOTP3D0)
+    |    - snowflake (abc_1537200202186752)
     |
     | Note: Custom generators must implement the contract
     | Rawilk\HumanKeys\Contracts\Generator
