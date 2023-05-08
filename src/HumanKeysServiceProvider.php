@@ -12,9 +12,6 @@ class HumanKeysServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('human-keys')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_human-keys_table')
-            ->hasCommand(HumanKeysCommand::class);
+            ->hasConfigFile();
     }
 }
