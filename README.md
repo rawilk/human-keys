@@ -1,5 +1,7 @@
 # human-keys
 
+![social image](https://banners.beyondco.de/Human%20Keys.png?theme=light&packageManager=composer+require&packageName=rawilk%2Fhuman-keys&pattern=architect&style=style_1&description=Use+Stripe-like+keys+for+your+models.&md=1&showWatermark=0&fontSize=100px&images=key)
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/rawilk/human-keys.svg?style=flat-square)](https://packagist.org/packages/rawilk/human-keys)
 ![Tests](https://github.com/rawilk/human-keys/workflows/Tests/badge.svg?style=flat-square)
 [![Total Downloads](https://img.shields.io/packagist/dt/rawilk/human-keys.svg?style=flat-square)](https://packagist.org/packages/rawilk/human-keys)
