@@ -69,7 +69,7 @@
                 "Rawilk\\HumanKeys\\HumanKeysServiceProvider"
             ],
             "aliases": {
-                "HumanKeys": "HumanKeys"
+                "HumanKeys": "Rawilk\\HumanKeys\\Facades\\HumanKeys"
             }
         }
     },
