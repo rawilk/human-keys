@@ -10,8 +10,8 @@ use Rawilk\HumanKeys\Concerns\HasHumanKey;
 
 class PostWithUuid extends Model
 {
-    use HasUuids;
     use HasHumanKey;
+    use HasUuids;
 
     protected $table = 'posts_with_uuid';
 
