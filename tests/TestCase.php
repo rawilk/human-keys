@@ -2,24 +2,28 @@
 
 namespace Rawilk\HumanKeys\Tests;
 
-use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Rawilk\HumanKeys\HumanKeysServiceProvider;
+use Rawilk\HumanKeys\Tests\Fixture\Migrations\CreateTestTables;
 
 class TestCase extends Orchestra
 {
-    use LazilyRefreshDatabase;
+    public function getEnvironmentSetUp($app)
+    {
+        $app['config']->set('database.default', 'sqlite');
+        $app['config']->set('database.connections.sqlite', [
+            'driver' => 'sqlite',
+            'database' => ':memory:',
+            'prefix' => '',
+        ]);
+
+        (new CreateTestTables)->up();
+    }
 
     protected function getPackageProviders($app): array
     {
         return [
             HumanKeysServiceProvider::class,
         ];
-    }
-
-    public function getEnvironmentSetUp($app)
-    {
-        $migration = include __DIR__ . '/Fixture/migrations/create_test_tables.php';
-        (new $migration)->up();
     }
 }

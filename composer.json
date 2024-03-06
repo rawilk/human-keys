@@ -46,7 +46,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Rawilk\\HumanKeys\\Tests\\": "tests/"
+            "Rawilk\\HumanKeys\\Tests\\": "tests/",
+            "Rawilk\\HumanKeys\\Tests\\Fixture\\Migrations\\": "tests/Fixture/migrations/"
         }
     },
     "scripts": {
