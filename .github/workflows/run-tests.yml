@@ -56,4 +56,4 @@ jobs:
                 run: composer show -D
 
             -   name: Execute tests
-                run: vendor/bin/pest --stop-on-failure --parallel --display-skipped
+                run: vendor/bin/pest
