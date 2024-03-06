@@ -11,7 +11,7 @@ class HumanKeys implements HumanKeysContract
     {
     }
 
-    public function generate(string $prefix = null): string
+    public function generate(?string $prefix = null): string
     {
         return GeneratorFactory::make($this->generator)->generator()->generate($prefix);
     }
