@@ -6,5 +6,5 @@ namespace Rawilk\HumanKeys\Contracts;
 
 interface HumanKeys
 {
-    public function generate(string $prefix = null): string;
+    public function generate(?string $prefix = null): string;
 }
