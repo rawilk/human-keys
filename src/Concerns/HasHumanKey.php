@@ -11,14 +11,6 @@ use Rawilk\HumanKeys\Facades\HumanKeys;
 /** @mixin \Illuminate\Database\Eloquent\Model */
 trait HasHumanKey
 {
-    public function initializeHasHumanKey(): void
-    {
-        if (in_array($this->getKeyName(), $this->humanKeys(), true)) {
-            $this->keyType = 'string';
-            $this->incrementing = false;
-        }
-    }
-
     public static function bootHasHumanKey(): void
     {
         static::creating(static function (Model $model) {
@@ -34,6 +26,23 @@ trait HasHumanKey
         });
     }
 
+    public static function humanKeyPrefix(): string
+    {
+        return Str::of(static::class)
+            ->classBasename()
+            ->lower()
+            ->limit(3, '')
+            ->toString();
+    }
+
+    public function initializeHasHumanKey(): void
+    {
+        if (in_array($this->getKeyName(), $this->humanKeys(), true)) {
+            $this->keyType = 'string';
+            $this->incrementing = false;
+        }
+    }
+
     /**
      * Get the columns that should receive human-readable keys.
      */
@@ -45,14 +54,5 @@ trait HasHumanKey
     public function newHumanKey(): string
     {
         return HumanKeys::generate(static::humanKeyPrefix());
-    }
-
-    public static function humanKeyPrefix(): string
-    {
-        return Str::of(static::class)
-            ->classBasename()
-            ->lower()
-            ->limit(3, '')
-            ->toString();
     }
 }
