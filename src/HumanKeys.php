@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Rawilk\HumanKeys;
 
 use Rawilk\HumanKeys\Contracts\HumanKeys as HumanKeysContract;
