@@ -9,7 +9,7 @@ use Tuupola\KsuidFactory as Ksuid;
 
 class KsuidGenerator implements Generator
 {
-    public function generate(?string $prefix = null): string
+    public function generate(string $prefix = null): string
     {
         return implode('_', [
             $prefix,
