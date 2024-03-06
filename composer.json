@@ -40,8 +40,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rawilk\\HumanKeys\\": "src/",
-            "Rawilk\\HumanKeys\\Database\\Factories\\": "database/factories/"
+            "Rawilk\\HumanKeys\\": "src/"
         }
     },
     "autoload-dev": {
