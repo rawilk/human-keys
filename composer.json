@@ -28,7 +28,7 @@
         "spatie/laravel-package-tools": "^1.14"
     },
     "require-dev": {
-        "godruoyi/php-snowflake": "^2.2",
+        "godruoyi/php-snowflake": "^3.0",
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^7.9",
         "orchestra/testbench": "^8.0",
