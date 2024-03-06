@@ -196,6 +196,9 @@ Please review [my security policy](.github/SECURITY.md) on how to report securit
 This package is very similar to the [laravel-human-keys](https://github.com/oneduo/laravel-human-keys) package by [oneduo](https://github.com/oneduo), however I created my own version because I wanted
 more flexibility in which columns IDs are generated for.
 
+Other alternatives include:
+- [spatie/laravel-prefixed-ids](https://github.com/spatie/laravel-prefixed-ids)
+
 ## Credits
 
 -   [Randall Wilk](https://github.com/rawilk)
