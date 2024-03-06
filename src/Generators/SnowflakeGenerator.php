@@ -9,7 +9,7 @@ use Rawilk\HumanKeys\Contracts\Generator;
 
 class SnowflakeGenerator implements Generator
 {
-    public function generate(string $prefix = null): string
+    public function generate(?string $prefix = null): string
     {
         return implode('_', [
             $prefix,

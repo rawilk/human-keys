@@ -18,7 +18,7 @@ it('throws an exception when an invalid generator is provided', function (mixed 
 test('custom generators can be used', function () {
     $generator = new class implements GeneratorContract
     {
-        public function generate(string $prefix = null): string
+        public function generate(?string $prefix = null): string
         {
             return "{$prefix}_foo";
         }
