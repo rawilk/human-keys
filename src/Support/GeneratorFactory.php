@@ -23,15 +23,21 @@ class GeneratorFactory
 
     public function generator(): Generator
     {
-        if (class_exists($this->generator) && in_array(Generator::class, class_implements($this->generator), true)) {
-            return new $this->generator;
-        }
-
         return match ($this->generator) {
             'ksuid' => new KsuidGenerator,
             'snowflake' => new SnowflakeGenerator,
             'uuid' => new UuidGenerator,
-            default => throw InvalidGenerator::invalid($this->generator),
+            default => $this->makeCustomGenerator($this->generator),
         };
+    }
+
+    protected function makeCustomGenerator(string $generator): Generator
+    {
+        throw_unless(
+            class_exists($generator) && in_array(Generator::class, class_implements($generator), true),
+            InvalidGenerator::invalid($generator)
+        );
+
+        return new $generator;
     }
 }
