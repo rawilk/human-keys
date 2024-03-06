@@ -197,7 +197,8 @@ This package is very similar to the [laravel-human-keys](https://github.com/oned
 more flexibility in which columns IDs are generated for.
 
 Other alternatives include:
-- [spatie/laravel-prefixed-ids](https://github.com/spatie/laravel-prefixed-ids)
+
+-   [spatie/laravel-prefixed-ids](https://github.com/spatie/laravel-prefixed-ids)
 
 ## Credits
 

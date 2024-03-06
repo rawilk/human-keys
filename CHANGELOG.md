@@ -6,7 +6,7 @@ All notable changes to `human-keys` will be documented in this file
 
 ### What's Changed
 
-- Fix `HumanKeys` Facade autoload reference in composer
+-   Fix `HumanKeys` Facade autoload reference in composer
 
 **Full Changelog**: https://github.com/rawilk/human-keys/compare/v1.0.0...v1.0.1
 
