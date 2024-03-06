@@ -30,7 +30,7 @@ You can publish the config file with:
 php artisan vendor:publish --tag="human-keys-config"
 ```
 
-If you are using the `KsuidGenerator`, you will need to install the `tuupola/ksuid` package:
+If you are using the `KsuidGenerator` (which is the default), you will need to install the `tuupola/ksuid` package:
 
 ```bash
 composer require tuupola/ksuid
@@ -78,6 +78,16 @@ This generator will generate something like this: `pos_451734027389370636`.
 
 ```bash
 composer require godruoyi/php-snowflake
+```
+
+#### UuidGenerator
+
+As of `v1.1.0`, you can use the `UuidGenerator`, which generates ids using Laravel's `Str::uuid()` helper. Ids generated with this generator will look like: `pos_b8a34e34553a41b885ae218ae81abd42`. The only requirement for this generator is to register it in the config file; there are no external dependencies that are required for it.
+
+```php
+// config/human-keys.php
+
+'generator' => \Rawilk\HumanKeys\Generators\UuidGenerator::class,
 ```
 
 #### Custom Generator
