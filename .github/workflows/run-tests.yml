@@ -2,11 +2,14 @@ name: Tests
 
 on:
     push:
-        paths-ignore:
-            - '**.md'
+        paths:
+            - '**.php'
+            - phpunit.xml.dist
+            - .github/workflows/pest.yml
+            - composer.json
     pull_request:
-        paths-ignore:
-            - '**.md'
+        branches:
+            - main
 
 jobs:
     test:
@@ -50,4 +53,4 @@ jobs:
                 run: composer show -D
 
             -   name: Execute tests
-                run: vendor/bin/pest
+                run: vendor/bin/pest --stop-on-failure --parallel --display-skipped
