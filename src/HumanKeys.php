@@ -9,9 +9,7 @@ use Rawilk\HumanKeys\Support\GeneratorFactory;
 
 class HumanKeys implements HumanKeysContract
 {
-    public function __construct(protected string $generator)
-    {
-    }
+    public function __construct(protected string $generator) {}
 
     public function generate(?string $prefix = null): string
     {

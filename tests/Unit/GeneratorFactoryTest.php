@@ -10,9 +10,7 @@ it('throws an exception when an invalid generator is provided', function (mixed 
     GeneratorFactory::make(is_object($generator) ? $generator::class : $generator)->generator();
 })->with([
     'foo',
-    new class
-    {
-    },
+    new class {},
 ])->expectException(InvalidGenerator::class);
 
 test('custom generators can be used', function () {
