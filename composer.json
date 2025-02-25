@@ -24,16 +24,16 @@
     ],
     "require": {
         "php": "^8.1|^8.2|^8.3",
-        "illuminate/contracts": "^10.0|^11.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
         "spatie/laravel-package-tools": "^1.14"
     },
     "require-dev": {
         "godruoyi/php-snowflake": "^3.0",
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^7.0|^8.0",
-        "orchestra/testbench": "^8.0|^9.0",
-        "pestphp/pest": "^2.20",
-        "pestphp/pest-plugin-laravel": "^2.2",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.20|^3.0",
+        "pestphp/pest-plugin-laravel": "^2.2|^3.0",
         "spatie/laravel-ray": "^1.31",
         "tuupola/ksuid": "^2.1"
     },
