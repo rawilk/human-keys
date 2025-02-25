@@ -2,6 +2,17 @@
 
 All notable changes to `human-keys` will be documented in this file
 
+## v1.1.1 - 2025-02-25
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/rawilk/human-keys/pull/14
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.2.0 by @dependabot in https://github.com/rawilk/human-keys/pull/16
+* Add Laravel 12.x support by @rawilk in https://github.com/rawilk/human-keys/pull/17
+* Add php 8.4 support by @rawilk in https://github.com/rawilk/human-keys/pull/18
+
+**Full Changelog**: https://github.com/rawilk/human-keys/compare/v1.1.0...v1.1.1
+
 ## v1.1.0 - 2024-03-06
 
 ### What's Changed
