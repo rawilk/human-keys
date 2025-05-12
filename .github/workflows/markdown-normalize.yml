@@ -19,7 +19,7 @@ jobs:
                     ref: ${{ github.head_ref }}
 
             -   name: Prettify markdown
-                uses: creyD/prettier_action@v4.3
+                uses: creyD/prettier_action@v4.5
                 with:
                     prettier_options: --write **/*.md
                     commit_message: "Formatted markdown"
