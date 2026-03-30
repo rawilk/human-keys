@@ -8,13 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Rawilk\HumanKeys\Facades\HumanKeys;
 
-/** @mixin \Illuminate\Database\Eloquent\Model */
+/** @mixin Model */
 trait HasHumanKey
 {
     public static function bootHasHumanKey(): void
     {
         static::creating(static function (Model $model) {
-            /** @var \Rawilk\HumanKeys\Concerns\HasHumanKey $model */
+            /** @var HasHumanKey $model */
             foreach ($model->humanKeys() as $key) {
                 if (empty($model->getAttribute($key))) {
                     $model->setAttribute(
