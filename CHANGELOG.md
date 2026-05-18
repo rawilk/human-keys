@@ -2,6 +2,14 @@
 
 All notable changes to `human-keys` will be documented in this file
 
+## v1.1.2 - 2026-05-18
+
+### What's Changed
+
+* Fix UuidGenerator str_replace() issue - see issue #28
+
+**Full Changelog**: https://github.com/rawilk/human-keys/compare/v1.1.1...v1.1.2
+
 ## v2.0.0 - 2026-05-18
 
 ### What's Changed
