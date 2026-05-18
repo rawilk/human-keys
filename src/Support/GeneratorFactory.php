@@ -12,7 +12,9 @@ use Rawilk\HumanKeys\Generators\UuidGenerator;
 
 class GeneratorFactory
 {
-    public function __construct(protected string $generator) {}
+    public function __construct(protected string $generator)
+    {
+    }
 
     public static function make(string $generator): self
     {
