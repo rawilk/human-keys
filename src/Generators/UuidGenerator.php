@@ -13,7 +13,7 @@ class UuidGenerator implements Generator
     {
         return implode('_', [
             $prefix,
-            str_replace('-', '', Str::uuid()),
+            str_replace('-', '', (string) Str::uuid()),
         ]);
     }
 }
