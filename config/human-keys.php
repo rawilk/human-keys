@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+use Rawilk\HumanKeys\Generators\KsuidGenerator;
 
 return [
     /*
@@ -19,5 +20,5 @@ return [
     | Rawilk\HumanKeys\Contracts\Generator
     |
     */
-    'generator' => \Rawilk\HumanKeys\Generators\KsuidGenerator::class,
+    'generator' => KsuidGenerator::class,
 ];
