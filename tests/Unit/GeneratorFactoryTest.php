@@ -11,7 +11,7 @@ it('throws an exception when an invalid generator is provided', function (mixed 
 })->with([
     'foo',
     new class {},
-])->expectException(InvalidGenerator::class);
+])->throws(InvalidGenerator::class);
 
 test('custom generators can be used', function () {
     $generator = new class implements GeneratorContract
