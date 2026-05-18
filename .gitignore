@@ -12,3 +12,4 @@ phpstan.neon
 phpunit.xml
 psalm.xml
 vendor
+.junie
