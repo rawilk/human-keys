@@ -2,6 +2,18 @@
 
 All notable changes to `human-keys` will be documented in this file
 
+## v2.0.0 - 2026-05-18
+
+### What's Changed
+
+* Drop Laravel 10.x support
+* Drop PHP 8.1 support
+* Add Laravel 13.x support
+* Add PHP 8.5 support
+* Fix UuidGenerator str_replace() issue - see issue #28
+
+**Full Changelog**: https://github.com/rawilk/human-keys/compare/v1.1.1...v2.0.0
+
 ## v1.1.1 - 2025-02-25
 
 ### What's Changed
